@@ -1,4 +1,4 @@
-import {itens} from '../mock/food.ts'
+import {itens} from '../mock/food'
 
 export default function Submenu() {    
     return(
