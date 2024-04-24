@@ -13,11 +13,11 @@ type IListFlavors = {
     image: string;
 };
 
-type IItems = {
-    id: number;
-    title: string;
-    listFlavors: IListFlavors;
-}
+// type IItems = {
+//     id: number;
+//     title: string;
+//     listFlavors: IListFlavors;
+// }
 
 function Title({ title }: ITitle) {
     return (

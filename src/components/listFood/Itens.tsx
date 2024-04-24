@@ -7,9 +7,9 @@ export default function Itens() {
 
     return(
         <div className="">
-            {itens.map(a => (
+            {/* {itens.map(a => (
                 <CardFood key={a.id} listFlavors={a.listFlavors} title={title}/>
-            ))}
+            ))} */}
         </div>
     )
 }
