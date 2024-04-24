@@ -13,9 +13,10 @@ type IListFlavors = {
     image: string;
 };
 
-type ICard = {
-    item: IListFlavors;
-    key: number;
+type IItems = {
+    id: number;
+    title: string;
+    listFlavors: IListFlavors;
 }
 
 function Title({ title }: ITitle) {
@@ -41,25 +42,19 @@ function ListFlavor({ price, flavor, image }: IListFlavors) {
     );
 }
 
-function Card({item, key}:ICard) {
-    return(
-        <div key={key}>
-            <Title title={item.title} />
-            <SimpleGrid columns={4} spacing={5} >
-            {item.listFlavors.map((flavor, index) => (
-                <ListFlavor key={index} price={flavor.price} flavor={flavor.name} image={flavor.image}/>
-            ))}
-            </SimpleGrid>
-        </div>
-    )
-}
-
 export default function CardFood() {
     return (
         <div className="bg-slate-200 rounded-md">
             <div className="h-10 my-5 border-2 border-red-200">
                 {itens.map((item, index) => (
-                    <Card item={item} key={index}/>
+                    <div key={index}>
+                       <Title title={item.title} />
+                       <SimpleGrid columns={4} spacing={5} >
+                            {item.listFlavors.map((flavor, index) => (
+                                <ListFlavor key={index} price={flavor.price} flavor={flavor.name} image={flavor.image}/>
+                            ))}
+                       </SimpleGrid>
+                    </div>
                 ))}
             </div>
         </div>
