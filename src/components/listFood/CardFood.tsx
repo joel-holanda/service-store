@@ -11,13 +11,14 @@ type IListFlavors = {
     price: number;
     flavor: string;
     image: string;
+    description: string;
 };
 
-// type IItems = {
-//     id: number;
-//     title: string;
-//     listFlavors: IListFlavors;
-// }
+type IItems = {
+    id: number;
+    title: string;
+    listFlavors: IListFlavors;
+}
 
 function Title({ title }: ITitle) {
     return (
@@ -27,11 +28,11 @@ function Title({ title }: ITitle) {
     );
 }
 
-function ListFlavor({ price, flavor, image }: IListFlavors) {
+function ListFlavor({ price, flavor, image, description }: IListFlavors) {
     return (
-        <Box p="5" width={300} className='border-2'>
+        <Box p="5" maxW='400px' borderWidth='2px' borderRadius='lg'>
             <div>
-                <Image src={image} alt='img food'/>
+                <Image src={image} alt={description}/>
             </div>
 
             <div>
@@ -45,15 +46,15 @@ function ListFlavor({ price, flavor, image }: IListFlavors) {
 export default function CardFood() {
     return (
         <div className="bg-slate-200 rounded-md">
-            <div className="h-10 my-5 border-2 border-red-200">
+            <div className="max-h-10 my-5 border-2 border-red-200">
                 {itens.map((item, index) => (
                     <div key={index}>
-                       <Title title={item.title} />
-                       <SimpleGrid columns={4} spacing={5} >
+                        <Title title={item.title} />
+                        <SimpleGrid minChildWidth='300px' spacing='80px'>
                             {item.listFlavors.map((flavor, index) => (
-                                <ListFlavor key={index} price={flavor.price} flavor={flavor.name} image={flavor.image}/>
+                                <ListFlavor key={index} price={flavor.price} flavor={flavor.name} image={flavor.image} description={flavor.description}/>
                             ))}
-                       </SimpleGrid>
+                        </SimpleGrid>
                     </div>
                 ))}
             </div>
