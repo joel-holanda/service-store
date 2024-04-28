@@ -1,6 +1,6 @@
 'use client'
 
-import  { useState, useEffect, useRef } from 'react'; // Importe o 'useRef' do React
+import  { useState, useEffect, useRef } from 'react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -32,10 +32,10 @@ function MenuMobile() {
       <div className='flex justify-between items-center'>
         <HamburgerIcon ref={btnRef} onClick={onOpen} w={50} h={50} />
         <div className='flex'>
-                <input type='text' className='min-w-max w-[400px] h-[40px] rounded border-0 border-none' placeholder='Pesquise seu pedido'/>
-                <Image alt='avatar' height='35' width='35' src={Lupa} className='ml-[-50px] mt-1 opacity-80'/>
+                <input type='text' className='w-[180px] sm:w-[400px] h-8 text-xs border-none outline-none' placeholder='Qual vai ser a boa hoje?'/>
+                <Image alt='avatar' src={Lupa} className='opacity-50 p-1 ml-[-30px] h-8 w-8'/>
         </div>
-        <Image alt='avatar' sizes='100vw' src={Logo} width={100} className='rounded-full'/>
+        <Image alt='avatar' sizes='100vw' src={Logo} width={100} className=''/>
       </div>
       
       <Drawer
@@ -108,7 +108,7 @@ function MenuPc() {
 
 export default function Menu() {
     const [widthScreen, setWidthScreen] = useState(0)
-// 
+ 
     useEffect(() => {
         const handleResize = () => {
             setWidthScreen(document.documentElement.clientWidth)
@@ -119,7 +119,7 @@ export default function Menu() {
             window.removeEventListener('resize', handleResize)
         }
     }, [])
-// 
+
     if(widthScreen < 1200) return <MenuMobile/>
     return <MenuPc/>
 }

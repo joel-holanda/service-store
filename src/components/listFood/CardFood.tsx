@@ -14,12 +14,6 @@ type IListFlavors = {
     description: string;
 };
 
-type IItems = {
-    id: number;
-    title: string;
-    listFlavors: IListFlavors;
-}
-
 function Title({ title }: ITitle) {
     return (
         <div className="w-full h-10 flex items-center justify-center">
@@ -36,8 +30,9 @@ function ListFlavor({ price, flavor, image, description }: IListFlavors) {
             </div>
 
             <div>
-                <Text mt={2} fontSize='xl' fontWeight='semibold' lineHeight='short'>{flavor}</Text>
-                <Text>{price}</Text>
+                <Text className='text-text' mt={2} fontSize='xl' textAlign={'center'} lineHeight='short'><strong>{flavor.toUpperCase()}</strong></Text>
+                <Text className='opacity-75 y-6'>Calabresa, Calabresa,, Calabresa,, Calabresa, Calabresa,Calabresa</Text>
+                <Text className='border-t-2 mt-2'>R$ {price}</Text>
             </div>
         </Box>
     );
@@ -45,12 +40,12 @@ function ListFlavor({ price, flavor, image, description }: IListFlavors) {
 
 export default function CardFood() {
     return (
-        <div className="bg-slate-200 rounded-md">
-            <div className="max-h-10 my-5 border-2 border-red-200">
+        <div className="">
+            <div className="">
                 {itens.map((item, index) => (
                     <div key={index}>
                         <Title title={item.title} />
-                        <SimpleGrid minChildWidth='300px' spacing='80px'>
+                        <SimpleGrid minChildWidth='300px' spacing='80px' className='place-items-center'>
                             {item.listFlavors.map((flavor, index) => (
                                 <ListFlavor key={index} price={flavor.price} flavor={flavor.name} image={flavor.image} description={flavor.description}/>
                             ))}

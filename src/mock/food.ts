@@ -31,7 +31,14 @@ export const itens = [
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
                 image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+            },           {
+                id: 10,
+                name: 'Chocolate',
+                price: faker.number.int({max: 100}),
+                description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
+                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
             },
+            
         ]
     },
     {
