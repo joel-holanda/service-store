@@ -1,5 +1,18 @@
 import { faker } from '@faker-js/faker';
 
+export type ITitle = {
+    title: string;
+};
+
+export type IListFlavors = {
+    flavor: {
+        id: number;
+        price: number;
+        name: string;
+        image: string;
+        description: string;    
+    }
+};
 
 export const itens = [
     {
@@ -10,29 +23,39 @@ export const itens = [
                 id: 10,
                 name: 'Calabresa',
                 price: faker.number.int({max: 100}),
-                description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
+                description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,In gredientes',
                 image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
             },
             {
-                id: 10,
+                id: 11,
                 name: 'Queijo',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
                 image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
-            },            {
-                id: 10,
+            }, 
+            {
+                id: 12,
                 name: 'Frango',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
                 image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
-            },            {
-                id: 10,
+            }, 
+            {
+                id: 13,
                 name: 'Chocolate',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
                 image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
-            },           {
-                id: 10,
+            },
+            {
+                id: 14,
+                name: 'Chocolate',
+                price: faker.number.int({max: 100}),
+                description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
+                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+            },
+            {
+                id: 15,
                 name: 'Chocolate',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
@@ -46,63 +69,79 @@ export const itens = [
         title: 'Pastel',
         listFlavors: [
             {
-                id: 10,
+                id: 20,
                 name: 'Calabresa',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+                image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg'
             },
             {
-                id: 10,
+                id: 21,
                 name: '2 array',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
-            },            {
-                id: 10,
+                image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg'
+            },            
+            {
+                id: 22,
                 name: 'Frango',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
-            },            {
-                id: 10,
+                image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg'
+            },            
+            {
+                id: 23,
                 name: 'Chocolate',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+                image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg'
+            },
+            {
+                id: 24,
+                name: 'Chocolate',
+                price: faker.number.int({max: 100}),
+                description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
+                image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg'
+            },
+            {
+                id: 25,
+                name: 'Chocolate',
+                price: faker.number.int({max: 100}),
+                description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
+                image: 'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg'
             },
         ]
     },
     {
-        id: 2,
-        title: 'Hambuguer',
+        id: 3,
+        title: 'Sanduiches',
         listFlavors: [
             {
-                id: 10,
+                id: 30,
                 name: 'Calabresa',
                 descriptions: '',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+                image: 'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg'
             },
             {
-                id: 10,
+                id: 31,
                 name: 'X-TUDOO',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+                image: 'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg'
             },            {
-                id: 10,
+                id: 32,
                 name: 'Frango',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+                image: 'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg'
             },            {
-                id: 10,
+                id: 33,
                 name: 'Chocolate',
                 price: faker.number.int({max: 100}),
                 description: 'Ingredientes,Ingredientes,Ingredientes,Ingredientes,Ingredientes',
-                image: 'https://www.cnnbrasil.com.br/wp-content/uploads/sites/12/2021/08/44772_748DFD89F9513B65.jpg?w=1220&h=674&crop=1'
+                image: 'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg'
             },
         ]
     }
