@@ -1,14 +1,14 @@
 'use client'
 
-import { useState } from "react"
+import { Dispatch, SetStateAction, useEffect, useState } from "react"
 
 import { itens, ITitle, IListFlavors } from "@/mock/food"
 
-function cardService() {
-    // const [quantity, setQuantity] = useState([])
+function CardService(): [number, Dispatch<SetStateAction<number>>] {
+    const [quantity, setQuantity] = useState(0)
 
-    function addCard() {
-        const foodSelect = itens
-    }
+    return [quantity, setQuantity]
+
 }
 
+export default CardService
