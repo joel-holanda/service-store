@@ -11,7 +11,7 @@ export default function CardFood() {
             <div>
                 {itens.map((item, index) => (
                     <div key={index}>
-                        <h1 className="w-full h-20 flex items-center justify-center mt-10 border-4 border-black border-opacity-60 text-4xl">{item.title}</h1>
+                        <h1 className="w-full h-20 flex items-center justify-center border-4 border-black border-opacity-60 text-4xl">{item.title}</h1>
                         <SimpleGrid  minChildWidth='150px'  spacing='40px' className='place-items-center'>
                             {item.listFlavors.map((flavor) => (
                                 <ListFlavor

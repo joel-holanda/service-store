@@ -12,19 +12,25 @@ import Card from './Card'
 
 function MenuMobile() {
   return (
-    <div className='w-full flex justify-center'>
-      <div className=' w-1/3 h-20 fixed bg-gray-300 opacity-7 bottom-0 z-10 flex justify-center rounded-md mb-8'>
-        <Link href={'/'}>
-          <Image src={Casa} alt='teste' height={80} width={80}/>
-        </Link>
+    <div className='h-full w-full'>
+      <div className='w-full bg-menu h-16 flex items-center'>
+        <Image alt='logo' src={Logo} width={100} className='rounded-full'/>
+        <h1 className='text-2xl font-serif'>Buguer King</h1>
+      </div>
+      <div className='w-full flex justify-center'>
+        <div className=' w-1/2 h-20 fixed bg-gray-300 opacity-7 bottom-0 z-10 flex rounded-md mb-8 justify-between items-center'>
+          <Link href={'/'}>
+            <Image src={Casa} alt='teste' height={50} width={50}/>
+          </Link>
 
-        <Link href={'/card'}>
-          <Card/>
-        </Link>
+          <Link href={'/card'}>
+            <Card/>
+          </Link>
 
-        <Link href={'/order'}>
-          <Image src={Pedido} alt='teste' height={80} width={80} />
-        </Link>
+          <Link href={'/order'}>
+            <Image src={Pedido} alt='teste' height={50} width={50} />
+          </Link>
+        </div>
       </div>
     </div>
   )

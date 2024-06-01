@@ -1,22 +1,10 @@
 'use client'
 
-import { useEffect, useState } from "react"
 import { MenuPc, MenuMobile } from "./TypesMenu"
+import { useWidth } from "@/app/contexts/useWith"
 
 export default function Menu() {
-  const [widthScreen, setWidthScreen] = useState<number>(0)
+  const widthScreen = useWidth()
 
-  useEffect(() =>{
-    const handleResize = () => {
-      setWidthScreen(document.documentElement.clientWidth)
-    }
-    handleResize()
-    window.addEventListener('resize', handleResize)
-    return () => {
-      window.removeEventListener('resize', handleResize)
-    }
-  }, [])
-
-  if(widthScreen < 1200) return <MenuMobile/>
-  return <MenuPc/>
+  return widthScreen < 1200 ? <MenuMobile/> : <MenuPc/>
 }

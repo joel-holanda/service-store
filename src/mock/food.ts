@@ -1,22 +1,4 @@
-import { faker } from '@faker-js/faker';
-
-export type ITitle = {
-    title: string;
-};
-
-type FlavorsItems = {
-    id: number
-    title: string
-    listFlavors: IListFlavors[]
-}
-
-export type IListFlavors = {
-    id: number;
-    price: number;
-    name: string;
-    image: string;
-    description: string;    
-};
+import {FlavorsItems} from '@/dto/IFood'
 
 export const itens: FlavorsItems[] = [
     {
