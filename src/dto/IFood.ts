@@ -1,3 +1,5 @@
+import { ReactNode, SetStateAction, Dispatch} from "react";
+
 export type FlavorsItems = {
     id: number
     title: string
@@ -9,5 +11,18 @@ export type IListFlavors = {
     price: number;
     name: string;
     image: string;
-    description: string;    
+    description: string;
+    idTitle?: number;
+    nameTitle?: string;
 };
+
+
+export type ICardContext ={
+    items: IListFlavors[];
+    quantity: number;
+    setQuantity: Dispatch<SetStateAction<number>>;
+    setItems: Dispatch<SetStateAction<IListFlavors[]>>
+}
+export type ICardProviderProps = {
+    children: ReactNode
+}
