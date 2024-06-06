@@ -3,7 +3,7 @@
 import Image from "next/image";
 
 import CarrinhoDeCompras from "@/assets/carrinho-de-compras.png";
-import { useCardContext } from "@/app/contexts/useCardContext";
+import { useCardContext } from "@/contexts/useCardContext";
 
 export default function Card() {
   const { quantity } = useCardContext();

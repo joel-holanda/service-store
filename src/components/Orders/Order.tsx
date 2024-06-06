@@ -1,29 +1,22 @@
 'use client'
 
-import { useCardContext } from "@/app/contexts/useCardContext"
+import { useCardContext } from "@/contexts/useCardContext"
+import Image from "next/image"
 
 export default function Order() {
     const {items} = useCardContext()
-    console.log(items)
-    return(
-        <div className="w-full flex justify-center">
-            <div className="w-[400px] h-[400px] bg-red-200">
-                <h1 className="text-center text-4xl">Pizza</h1>
-                <p>Sabores:</p>
-
-                <div>
-                    <div className="">
-                        {items.map((it) => (
-                            <p key={1}>{it.name}</p>
-                        ))}
-                    </div>
-                    <div>
-
+    
+    return( 
+        <div className="flex flex-col items-center">
+            {items.map((it) => 
+                <div key={it.id} className="w-1/2 h-[100px] bg-orange-400 mt-[20px]">
+                    <h1 className="text-center text-4xl border-b-2 border-b-sky-200">{it.nameTitle}</h1>
+                    <div className="flex justify-between px-3 mt-4 text-1xl">
+                        <p>{it.name}</p>
+                        <p>R$ {it.price}</p>
                     </div>
                 </div>
-
-                
-            </div>
+            )}
         </div>
     )
 }

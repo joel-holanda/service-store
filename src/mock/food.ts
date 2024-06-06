@@ -1,6 +1,6 @@
 import {FlavorsItems} from '@/dto/IFood'
 
-export const itens: FlavorsItems[] = [
+export const itensFood: FlavorsItems[] = [
     {
         id: 1,
         title: 'Pizza',
