@@ -1,12 +1,12 @@
-import Menu from "@/components/Menu/Menu";
-import CardFood from "@/components/ListFood/CardFood";
-
+import React from 'react'
+import Menu from '@/components/Menu/Menu'
+import CardFood from '@/components/ListFood/CardFood'
 
 export default function HomePage() {
-  return(
+  return (
     <div>
-        <Menu/>
-        <CardFood/>
+      <Menu />
+      <CardFood />
     </div>
   )
 }
