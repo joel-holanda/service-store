@@ -2,15 +2,23 @@
 
 import React from 'react'
 import { useCardContext } from '@/contexts/useCardContext'
+import { Card } from '@chakra-ui/react'
+import { ChevronLeft } from 'lucide-react'
+import Link from 'next/link'
 
 export default function Order() {
   const { items } = useCardContext()
 
   return (
     <>
-      <div className="flex flex-col items-center">
+      <div className="max-w-screen-md mx-auto flex flex-col gap-5 py-5">
+        <Link href={'/'} className="flex gap-1 items-center">
+          <ChevronLeft size={26} />
+          <span className="text-lg">Voltar</span>
+        </Link>
+
         {items.map((it) => (
-          <div key={it.id} className="w-1/2 h-[100px] bg-orange-400 mt-[20px]">
+          <Card key={it.id} className="w-full h-[100px] bg-orange-400">
             <h1 className="text-center text-4xl border-b-2 border-b-sky-200">
               {it.nameTitle}
             </h1>
@@ -18,7 +26,7 @@ export default function Order() {
               <p>{it.name}</p>
               <p>R$ {it.price}</p>
             </div>
-          </div>
+          </Card>
         ))}
       </div>
     </>
