@@ -1,6 +1,6 @@
+import { NavBar } from '@/components/Navbar'
 import React from 'react'
-import Menu from '@/components/Menu/Menu'
 
-export default function OrderṔage() {
-  return <Menu />
+export default function OrderPage() {
+  return <NavBar />
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import Menu from '@/components/Menu/Menu'
 import Order from '@/components/Orders/Order'
+import { NavBar } from '@/components/Navbar'
 
 export default function CardPage() {
   return (
     <div>
-      <Menu />
+      <NavBar />
       <Order />
     </div>
   )

@@ -1,11 +1,11 @@
 import React from 'react'
-import Menu from '@/components/Menu/Menu'
 import CardFood from '@/components/ListFood/CardFood'
+import { NavBar } from '@/components/Navbar'
 
 export default function HomePage() {
   return (
     <div>
-      <Menu />
+      <NavBar />
       <CardFood />
     </div>
   )
