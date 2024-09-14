@@ -1,7 +1,7 @@
 'use client'
 
 import React, { createContext, useState, useContext } from 'react'
-import { ICardContext, ICardProviderProps, IListFlavors } from '@/dto/IFood'
+import { ICardContext, ICardProviderProps, Product } from '@/types/IFood'
 
 const CardContext = createContext({} as ICardContext)
 
@@ -15,7 +15,7 @@ const testeFood = {
 }
 
 export default function CardProvider({ children }: ICardProviderProps) {
-  const [items, setItems] = useState<IListFlavors[]>([testeFood])
+  const [items, setItems] = useState<Product[]>([testeFood])
   const [quantity, setQuantity] = useState(0)
 
   return (

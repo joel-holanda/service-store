@@ -1,12 +1,12 @@
 import { ReactNode, SetStateAction, Dispatch } from 'react'
 
-export type FlavorsItems = {
+export type ProductsSection = {
   id: number
   title: string
-  listFlavors: IListFlavors[]
+  products: Product[]
 }
 
-export type IListFlavors = {
+export type Product = {
   id: number
   price: number
   name: string
@@ -17,10 +17,10 @@ export type IListFlavors = {
 }
 
 export type ICardContext = {
-  items: IListFlavors[]
+  items: Product[]
   quantity: number
   setQuantity: Dispatch<SetStateAction<number>>
-  setItems: Dispatch<SetStateAction<IListFlavors[]>>
+  setItems: Dispatch<SetStateAction<Product[]>>
 }
 export type ICardProviderProps = {
   children: ReactNode

@@ -1,12 +1,15 @@
 import React from 'react'
-import CardFood from '@/components/ListFood/CardFood'
 import { NavBar } from '@/components/Navbar'
+import { ProductsSection } from '@/containers/home-page/products-section'
 
 export default function HomePage() {
   return (
     <div>
       <NavBar />
-      <CardFood />
+
+      <main>
+        <ProductsSection />
+      </main>
     </div>
   )
 }

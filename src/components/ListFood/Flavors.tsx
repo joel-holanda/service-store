@@ -2,7 +2,7 @@ import React from 'react'
 
 import { useCardContext } from '@/contexts/useCardContext'
 import { Box, Text, Image } from '@chakra-ui/react'
-import { IListFlavors } from '@/dto/IFood'
+import { Product } from '@/types/IFood'
 
 export default function ListFlavor({
   id,
@@ -12,12 +12,11 @@ export default function ListFlavor({
   name,
   idTitle,
   nameTitle,
-}: IListFlavors) {
+}: Product) {
   const { items, setItems, quantity, setQuantity } = useCardContext()
 
-  const addItem = (flavor: IListFlavors) => {
-    console.log(flavor)
-    setItems([...items, flavor])
+  const addItem = (product: Product) => {
+    setItems([...items, product])
     setQuantity(quantity + 1)
   }
 

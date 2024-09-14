@@ -1,10 +1,10 @@
-import { FlavorsItems } from '@/dto/IFood'
+import { ProductsSection } from '@/types/IFood'
 
-export const itensFood: FlavorsItems[] = [
+export const productsSections: ProductsSection[] = [
   {
     id: 1,
     title: 'Pizza',
-    listFlavors: [
+    products: [
       {
         id: 10,
         name: 'Calabresa',
@@ -53,7 +53,7 @@ export const itensFood: FlavorsItems[] = [
   {
     id: 2,
     title: 'Pastel',
-    listFlavors: [
+    products: [
       {
         id: 20,
         name: 'Calabresa',
@@ -107,7 +107,7 @@ export const itensFood: FlavorsItems[] = [
   {
     id: 3,
     title: 'Sanduiches',
-    listFlavors: [
+    products: [
       {
         id: 30,
         name: 'Tradicional',
