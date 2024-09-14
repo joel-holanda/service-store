@@ -1,12 +1,12 @@
 'use client'
 
 import React from 'react'
+import Image from 'next/image'
 import { motion } from 'framer-motion'
+import { Box, Text } from '@chakra-ui/react'
 
 import { Product, ProductsSection } from '@/types/IFood'
-import { Box, Text } from '@chakra-ui/react'
 import { useCardContext } from '@/contexts/useCardContext'
-import Image from 'next/image'
 
 type ProductProps = {
   product: Product
