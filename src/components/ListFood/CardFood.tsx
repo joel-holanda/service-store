@@ -1,6 +1,6 @@
 'use client'
 
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import { motion } from 'framer-motion'
 import { SimpleGrid } from '@chakra-ui/react'
 
@@ -8,7 +8,23 @@ import { itensFood } from '@/mock/food'
 
 import ListFlavor from './Flavors'
 
+import getProducts from '@/api/api'
+
 export default function CardFood() {
+  const [prod, setProd] = useState()
+
+  useEffect(() => {
+    async function load() {
+      try {
+        const data = await getProducts()
+        setProd(data)
+      } catch (err: any) {
+        console.log(err)
+      }
+    }
+    load()
+  }, [])
+
   return (
     <>
       <div>
@@ -40,6 +56,7 @@ export default function CardFood() {
                     name={flavor.name}
                     idTitle={it.id}
                     nameTitle={it.title}
+                    quantity={flavor.quantity}
                   />
                 </motion.div>
               ))}

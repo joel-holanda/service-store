@@ -14,11 +14,12 @@ export type IListFlavors = {
   description: string
   idTitle?: number
   nameTitle?: string
+  quantity: number
 }
 
 export type ICardContext = {
-  items: IListFlavors[]
-  quantity: number
+  items: IListFlavors[],
+  quantity: number,
   setQuantity: Dispatch<SetStateAction<number>>
   setItems: Dispatch<SetStateAction<IListFlavors[]>>
 }

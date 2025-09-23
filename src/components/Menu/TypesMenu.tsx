@@ -1,6 +1,7 @@
 import React from 'react'
 import { FaHouse, FaListUl } from 'react-icons/fa6'
 import { FaSearch } from 'react-icons/fa'
+import { Select } from '@chakra-ui/react'
 
 import Image from 'next/image'
 import Link from 'next/link'
@@ -30,6 +31,11 @@ function MenuMobile() {
             <Link href={'/order'}>
               <FaListUl />
             </Link>
+          <Select icon='null' onChange={(w) => console.log(w)}>
+            <option value="Produção">Produção</option>
+            <option value="Local">Local</option>
+          </Select>
+          
           </div>
         </div>
       </div>
@@ -71,6 +77,11 @@ function MenuPc() {
               className="hover:text-secondaryDark duration-all duration-300 ease-in-out 300"
             />
           </Link>
+
+          <Select icon='null' onChange={(e) => console.log(e.target.value)}>
+            <option value="Produção">Produção</option>
+            <option value="Local">Local</option>
+          </Select>
         </div>
       </div>
     </>

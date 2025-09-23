@@ -12,6 +12,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Calabresa, Queijo mussarela, molho de tomate e cebola.',
         image:
           'https://sgnh.com.br/wp-content/uploads/2021/07/pizza_calabresa.png',
+        quantity: 0
       },
       {
         id: 11,
@@ -21,6 +22,7 @@ export const itensFood: FlavorsItems[] = [
           'Mussarela, parmesão, provolone, gorgonzola e molho de tomate.',
         image:
           'https://sgnh.com.br/wp-content/uploads/2021/07/pizza_quatro.png',
+        quantity: 0
       },
       {
         id: 12,
@@ -29,6 +31,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Frango desfiado, catupiry, mussarela e molho de tomate.',
         image:
           'https://sgnh.com.br/wp-content/uploads/2021/07/pizza_frango.png',
+        quantity: 0
       },
       {
         id: 13,
@@ -38,6 +41,7 @@ export const itensFood: FlavorsItems[] = [
           'Strogonoff de carne, batata palha, mussarela e molho de tomate.',
         image:
           'https://sgnh.com.br/wp-content/uploads/2021/07/pizza_strogonoff.png',
+        quantity: 0
       },
       {
         id: 14,
@@ -47,6 +51,7 @@ export const itensFood: FlavorsItems[] = [
           'Presunto, ovo, cebola, azeitona, ervilha, mussarela e molho de tomate.',
         image:
           'https://sgnh.com.br/wp-content/uploads/2021/07/pizza_portuguesa.png',
+        quantity: 0
       },
     ],
   },
@@ -61,6 +66,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg',
+        quantity: 0
       },
       {
         id: 21,
@@ -69,6 +75,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg',
+        quantity: 0
       },
       {
         id: 22,
@@ -77,6 +84,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg',
+        quantity: 0
       },
       {
         id: 23,
@@ -85,6 +93,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg',
+        quantity: 0
       },
       {
         id: 24,
@@ -93,6 +102,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg',
+        quantity: 0
       },
       {
         id: 25,
@@ -101,6 +111,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://media-cdn.tripadvisor.com/media/photo-s/16/7f/a3/b6/pastel-trevo-de-bertioga.jpg',
+        quantity: 0
       },
     ],
   },
@@ -115,6 +126,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg',
+        quantity: 0
       },
       {
         id: 31,
@@ -123,6 +135,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg',
+        quantity: 0
       },
       {
         id: 32,
@@ -131,6 +144,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg',
+        quantity: 0
       },
       {
         id: 33,
@@ -139,6 +153,7 @@ export const itensFood: FlavorsItems[] = [
         description: 'Ingredientes',
         image:
           'https://novonegocio.com.br/wp-content/uploads/2012/05/Como-Montar-Uma-Casa-de-Sanduiches.jpg',
+        quantity: 0
       },
     ],
   },
